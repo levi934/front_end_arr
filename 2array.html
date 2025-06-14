@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista de Contatos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Contatos</h1>
+    <ul id="lista-contatos"></ul>
+
+    <script>
+        // Lista inicial de contatos
+        let contatos = ['Maria,tel:88998000103', 'Pedro,tel:88984141497'];
+
+        // Adicionando um contato no início
+        contatos.unshift('Ana,tel:88996960423');
+
+        // Removendo o último contato
+        contatos.pop();
+
+        // Exibindo contatos no HTML
+        const lista = document.getElementById('lista-contatos');
+
+        contatos.forEach(contato => {
+            const item = document.createElement('li');
+            item.textContent = contato;
+            lista.appendChild(item);
+        });
+    </script>
+</body>
+</html>
