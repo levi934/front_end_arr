@@ -12,3 +12,6 @@ Criar e manipular arrays.
 Adicionar e remover elementos.
 
 Exibir resultados dinamicamente na interface.
+
+ Objetivo
+Este projeto serve como prática de lógica de programação com foco em arrays, eventos do DOM e interação do usuário no navegador. Ideal para estudantes iniciantes no desenvolvimento front-end que desejam reforçar conceitos básicos de JavaScript.
